@@ -1,0 +1,11 @@
+﻿@model AutoSite.Core.Models.ImportClassItem
+
+<input asp-for="ClassId" type="hidden" />
+
+<div class="form-group hidden">
+    <input class="form-control auto-upload" asp-for="Image" value="upload" />
+    <span asp-validation-for="Image" class="text-danger" />
+</div>
+<div class="form-group">
+    <input class="btn btn-success btn-sm uploader" type="button" value="Import from image" />
+</div>

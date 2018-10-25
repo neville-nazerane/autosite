@@ -1,0 +1,15 @@
+﻿@model AutoSite.Core.Entities.PropertyItem
+
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+<input asp-for="ClassItemId" type="hidden" />
+
+    <div class="input-group">
+        <span class="input-group-addon">Add Manually</span>
+        <input asp-for="Name" class="form-control" />
+        <span class="input-group-btn">
+            <input type="submit" value="Add Field" class="btn btn-success col-sm" />
+        </span>
+    </div>
+    <span asp-validation-for="Name" class="text-danger"></span>
+

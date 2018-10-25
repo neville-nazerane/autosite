@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>Welcome to AutoSite</h1>
+
+    
+<h2>The idea</h2>
+
+<p class="instruct">
+    <b>AutoSite</b> uses the documents that you manually to generate a website complete with a 
+    mvc web application with source code and database setup. 
+</p>
+
+<h2>Setting up site content</h2>
+
+<p class="instruct">
+    You can create and manage site contents <a href="~/sites" target="_blank">here</a>. Create a new
+    site, new page and upload your screen shots of the document. With the help of
+    microsoft cognitive services (see <a asp-action="works" target="_blank">how it works</a>) 
+    <b>AutoSite</b> can understand the contents and its format from the image, using which 
+    <b>AutoSite</b> determines the fields and its types. Once the types are detected, you 
+    can verify and update the predected information.
+</p>
+
+<h2>Generating a site using it</h2>
+
+<p class="instruct">
+    Once a website content is setup, you can open CLI in any folder on your computer
+    and use <code>make-autosite "your site name"</code>. This command creates the
+    a .net core mvc web application in the current directory using the selected
+    site contents. You can install this 
+    <a asp-action="install" target="_blank">command line tool here</a>.
+</p>
+ 
+<h2>Custom tools</h2>
+
+<p class="instruct">
+    You can also create your own custom tools with the help of the rest service.
+    You can take the help of the <a href="~/swagger" target="_blank">swagger documentation</a>. 
+</p>
+
+

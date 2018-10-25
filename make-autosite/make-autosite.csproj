@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RootNamespace>make_autosite</RootNamespace>
+    <PackageId>autosite</PackageId>
+    <PackageProjectUrl>https://autowebsite.azurewebsites.net</PackageProjectUrl>
+    <Description>Auto generate complete websites from scanned images</Description>
+    <LangVersion>7.3</LangVersion>
+    <PackAsTool>True</PackAsTool>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NetCore.Apis.Consumer" Version="1.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AutoSite.Core\AutoSite.Core.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Installation";
+}
+
+<br />
+<br />
+
+<ol class="instruct">
+    <li>
+        <p>
+            If you don't already have the .NET SDK installed, you can install it from
+            <a href="http://dot.net/core">dot.net/core</a>.
+        </p>
+    </li>
+    <li>
+        <p>
+            The autosite tool uses the aspnet-codegenerator tool for code generation.
+            If you don't have the aspnet-codegenerator tool installed, you can install
+            it using command line:
+            <code>dotnet tool install dotnet-aspnet-codegenerator -g</code>.
+        </p>
+    </li>
+    <li>
+        <p>
+            You can install the autosite tool by using
+            <code>dotnet tool install autosite -g</code>
+        </p>
+    </li>
+    <li>
+        Once installed you can use <code>make-autosite site_name</code> to generate
+        a new website. 
+    </li>
+</ol>

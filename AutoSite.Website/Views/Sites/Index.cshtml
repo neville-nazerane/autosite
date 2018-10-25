@@ -1,0 +1,45 @@
+﻿@model IEnumerable<SiteContent>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Sites</h2>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model)
+{
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                <a class="btn btn-primary" href="~/manage/@item.Id">Manage</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+<form asp-action="Add">
+    <partial name="_AddSitePartial" model="null" />
+</form>
+
+
+<partial name="_ValidationScriptsPartial" />
