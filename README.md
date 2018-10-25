@@ -20,7 +20,7 @@ Running locally:
     "base": "",
     "typeMapper": {
       "path": "knowledgebases/..../generateAnswer",
-      "Authorization": "EndpointKey 953e6eb8-d4ef-4407-8ca9-0ba732bdd7e9"
+      "Authorization": "EndpointKey ...."
     }
   },
   "cognitive": {
