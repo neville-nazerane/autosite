@@ -9,6 +9,8 @@ Running locally:
     - Computer vision 
     - Custom vision
   
+ 2. You can train all required cognitive services form the contents in this dropbox link: https://www.dropbox.com/sh/yx6k5tzf8ncb62y/AACuyqbDNIdW8GW14fUeIU1ka?dl=0 
+  
  2. Use the following format for the secret manager:
  
  ```
@@ -46,7 +48,7 @@ Running locally:
  4. To install the tool locally use the following CLI:
  ```
  dotnet pack
- dotnet tool update make-autosite -g --add-source bin\release
+ dotnet tool install make-autosite -g --add-source bin\release
  ```
  Remember to have the website running while testing the tool.
  After initial installation you can update using the install.cmd batch file. 
