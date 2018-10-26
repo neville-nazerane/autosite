@@ -1,5 +1,8 @@
 # autosite
 
+Live demo:
+https://autowebsite.azurewebsites.net
+
 Running locally:
 
 1. Setup the following
