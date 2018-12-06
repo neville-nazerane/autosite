@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
@@ -65,7 +66,13 @@ namespace make_autosite
                 RunDotnet("ef database update");
                 RunDotnet("run");
             }
-            else Console.WriteLine("Site name not found");
+            else
+            {
+                if (res.StatusCode == HttpStatusCode.NotFound)
+                    Console.WriteLine("Site name not found");
+                else
+                    Console.WriteLine($"Found error: {res.StatusCode}, with message '{res.TextResponse}'");
+            }
         }
 
         string ControllerGeneratorOptions(string model, string projectName)

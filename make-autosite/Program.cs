@@ -17,9 +17,7 @@ namespace make_autosite
                     await new WebGenerator(args[0]) { }.GenerateAsync();
                     break;
                 default:
-                    await new WebGenerator(args[0]) {
-
-                    }.GenerateAsync();
+                    await new WebGenerator(args[0]) { }.GenerateAsync();
                     break;
             }
 

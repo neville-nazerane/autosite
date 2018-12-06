@@ -1,3 +1,3 @@
  dotnet pack
- dotnet tool update make-autosite -g --add-source bin\release
+ dotnet tool update autosite -g --add-source bin\debug
  pause
