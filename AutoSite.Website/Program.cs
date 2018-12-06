@@ -19,6 +19,10 @@ namespace AutoSite.Website
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                .UseUrlsIfProvided()
+                .UseKeyVaultConfiguration(
+                            Environment.GetEnvironmentVariable("KEYVAULT_ENDPOINT"), 
+                                        "autosite", true)
                 .UseStartup<Startup>();
     }
 }

@@ -20,6 +20,8 @@ namespace AutoSite.Website
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            foreach (string s in configuration.GetChildren().Select(c => c.Key))
+                Console.WriteLine(s);
         }
 
         public IConfiguration Configuration { get; }

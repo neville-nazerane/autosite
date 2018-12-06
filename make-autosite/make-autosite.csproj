@@ -12,6 +12,7 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <RootNamespace>make_autosite</RootNamespace>
     <PackageId>autosite</PackageId>
+    <PackageVersion>1.1</PackageVersion>
     <PackageProjectUrl>https://autowebsite.azurewebsites.net</PackageProjectUrl>
     <Description>Auto generate complete websites from scanned images</Description>
     <LangVersion>7.3</LangVersion>

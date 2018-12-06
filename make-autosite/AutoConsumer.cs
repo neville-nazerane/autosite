@@ -11,7 +11,7 @@ namespace make_autosite
     {
 
 #if RELEASE
-        const string apiBase = "https://autowebsite.azurewebsites.net";
+        const string apiBase = "http://autosite.nevillenazerane.com";
 #else
         const string apiBase = "http://localhost:52612";
 #endif
