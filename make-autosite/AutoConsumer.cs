@@ -24,5 +24,10 @@ namespace make_autosite
         static internal async Task<ApiConsumedResponse<SiteContent>> GetSiteAsync(string name)
             => await consumer.GetAsync($"{sitePath}/{name}");
 
+        public static void ShowBase()
+        {
+            Console.WriteLine("using endpoint: " + apiBase);
+        }
+
     }
 }

@@ -26,6 +26,7 @@ namespace make_autosite
             var res = await AutoConsumer.GetSiteAsync(name);
             if (res.IsSuccessful)
             {
+                AutoConsumer.ShowBase();
                 var content = res.Data;
                 string siteName = name.Replace(" ", "_");
 
@@ -43,16 +44,17 @@ namespace make_autosite
 
                 Info("Setting up models");
 
-                string menuItems = "";
-                foreach (var c in content.ClassItems)
-                {
+                var menuList = content.ClassItems.Select(c => {
                     string className = c.Name.CamelCase();
                     File.WriteAllText($"Models/{className}.cs", new ClassBuilder(c, projectName).Build());
                     RunDotnet("aspnet-codegenerator controller " + ControllerGeneratorOptions(className, projectName));
-                    menuItems += $"\n<li><a href='~/{className}'>{className}</a></li>";
-                }
+                    return $"\n<li class='nav-item'><a class='nav-link text-dark' href='~/{className}'>{className}</a>";
+                });
+                string menuItems = string.Join("</li>", menuList);
                 string layout = "Views/Shared/_Layout.cshtml";
-                File.WriteAllText(layout, File.ReadAllText(layout).Replace("Contact</a></li>", "Contact</a></li>" + menuItems));
+                string menuBefore = ">Privacy</a>";
+                File.WriteAllText(layout, File.ReadAllText(layout).Replace(menuBefore,
+                                            menuBefore + "</li>" + menuItems));
 
                 Info("Creating database");
                 string startup = "Startup.cs";
