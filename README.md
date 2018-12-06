@@ -1,5 +1,8 @@
 # autosite
 
+Live demo:
+https://autowebsite.azurewebsites.net
+
 Running locally:
 
 1. Setup the following
@@ -43,9 +46,9 @@ Running locally:
   }
 }
  ```
- 3. Update database using `dotnet ef database update` in CLI. 
+ 3. To setup database, open command line on the AutoSite.Migrations folder and run `dotnet ef database update` in CLI. 
  
- 4. To install the tool locally use the following CLI:
+ 4. To install the tool locally, CD into the make-autosite folder and use the following CLI:
  ```
  dotnet pack
  dotnet tool install make-autosite -g --add-source bin\release
