@@ -1,7 +1,7 @@
 # autosite
 
 Live demo:
-https://autowebsite.azurewebsites.net
+http://autosite.nevillenazerane.com/
 
 Running locally:
 
