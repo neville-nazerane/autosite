@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28531.58
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoSite.Core", "AutoSite.Core\AutoSite.Core.csproj", "{AB6BC00F-CD2D-4B57-8F34-C0DDEED9F2D0}"
 EndProject
@@ -131,35 +131,5 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {12643955-5A63-483E-B770-68E2B71C9402}
-	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 9
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://dev.azure.com/autowebgenerator
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = AutoSite.Core\\AutoSite.Core.csproj
-		SccProjectName1 = AutoSite.Core
-		SccLocalPath1 = AutoSite.Core
-		SccProjectUniqueName2 = AutoSite.Migrations\\AutoSite.Migrations.csproj
-		SccProjectName2 = AutoSite.Migrations
-		SccLocalPath2 = AutoSite.Migrations
-		SccProjectUniqueName3 = AutoSite.Data\\AutoSite.Data.csproj
-		SccProjectName3 = AutoSite.Data
-		SccLocalPath3 = AutoSite.Data
-		SccProjectUniqueName4 = AutoSite.DataAccess\\AutoSite.DataAccess.csproj
-		SccProjectName4 = AutoSite.DataAccess
-		SccLocalPath4 = AutoSite.DataAccess
-		SccProjectUniqueName5 = AutoSite.Website\\AutoSite.Website.csproj
-		SccProjectName5 = AutoSite.Website
-		SccLocalPath5 = AutoSite.Website
-		SccProjectUniqueName6 = AutoSite.Services\\AutoSite.Services.csproj
-		SccProjectName6 = AutoSite.Services
-		SccLocalPath6 = AutoSite.Services
-		SccProjectUniqueName7 = AutoSite.Business\\AutoSite.Business.csproj
-		SccProjectName7 = AutoSite.Business
-		SccLocalPath7 = AutoSite.Business
-		SccProjectUniqueName8 = make-autosite\\make-autosite.csproj
-		SccProjectName8 = make-autosite
-		SccLocalPath8 = make-autosite
 	EndGlobalSection
 EndGlobal
